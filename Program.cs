@@ -12,3 +12,16 @@ for (int i = 0; i < massive.Length; i++)
     }
 }
 
+String[] newMassive = new String[count];
+count = 0;
+
+for (int i = 0; i < massive.Length; i++)
+{
+    char[] chars = massive[i].ToCharArray();
+
+    if (chars.Length <= 3)
+    {
+        newMassive[count] = massive[i];
+        count++;
+    }
+}
