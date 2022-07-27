@@ -25,3 +25,13 @@ for (int i = 0; i < massive.Length; i++)
         count++;
     }
 }
+
+void Print(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+Print(newMassive);
